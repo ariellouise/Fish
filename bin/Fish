@@ -2,4 +2,4 @@
 
 require_relative '../lib/Fish'
 
-cli.new.start
+CLI.new.start
