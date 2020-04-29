@@ -19,3 +19,5 @@ puts page.read.class #string
 
 html_text = page.read
   
+  
+  #soundTitle_titleContainer ##span (a tags are for links)
