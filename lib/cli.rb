@@ -55,4 +55,28 @@ def menu
     puts "Please choose an episode by number to get the website where you can listen to this episode."
      input = gets.strip
      episode_choice(input_1, input)
+   when "2"
+   puts "Comics of The Round Table! Episodes:"
+    list_comedy
+    puts "Please choose an episode by number to get the website where you can listen to this episode."
+     input = gets.strip
+     episode_choice(input_1, input)
+   when "3"
+   puts "The Fishbowl Podcast Episodes:"
+     list_fishbowl
+     puts "Please choose an episode by number to get the website where you can listen to this episode."
+      input = gets.strip
+      episode_choice(input_1, input)
+   when "4"
+   puts "32 Bit Arena Podcast Episodes:"
+     list_bit
+     puts "Please choose an episode by number to get the website where you can listen to this episode."
+      input = gets.strip
+      episode_choice(input_1, input)
+   when "5"
+   puts "The Uptown Series Episodes:"
+     list_uptown
+     puts "Please choose an episode by number to get the website where you can listen to this episode."
+      input = gets.strip
+      episode_choice(input_1, input)
   
