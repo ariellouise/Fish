@@ -22,6 +22,10 @@ class Episodes
   end
   
   def self.all 
+    @@episodes.each_with_index(1) do |episode, i|
+      puts " #{i}. #{episode.title}"
+    end
+  end 
  
   def self.sports
     @sports = []
