@@ -2,6 +2,6 @@
 
 class CLI 
   def start 
-    puts "Hello World!"
+    puts "Welcome to The Fish Guy Media Episode List!"
   end
 end

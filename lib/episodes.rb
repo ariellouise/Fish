@@ -3,8 +3,6 @@
 class Playlists
  @@all = [ ]
  
- def self.drink
-
  
   def self.sports
     @sports = []
