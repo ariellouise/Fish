@@ -11,6 +11,23 @@ base_url = "https://soundcloud.com/fishguymedia/sets"
 
 
 page = open(base_url)
+page_html = base_page.read
+
+
+sports_page = open(sports_url)
+sports_html = sports_page.read
+
+comedy_page = open(comedy_url)
+comedy_html = comedy_page.read
+
+fishbowl_page = open(fishbowl_url)
+fishbowl_html = fishbowl_page.read
+
+bit_page = open(bit_url)
+bit_html = bit_page.read
+
+uptown_page = open(uptown_url)
+uptown_html = uptown_page.read
 
 puts page.class #tempfile
 puts page.content_type #text/html
