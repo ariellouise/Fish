@@ -48,4 +48,11 @@ def menu
   puts "To end the application, type 'exit'."
   input_1 = gets.strip
   
+  case input_1
+   when "1"
+   puts "Up Next Sports Show! Episodes:"
+    list_sports
+    puts "Please choose an episode by number to get the website where you can listen to this episode."
+     input = gets.strip
+     episode_choice(input_1, input)
   
