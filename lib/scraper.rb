@@ -1,13 +1,14 @@
 require 'open=uri'
 
+
+base_url = "https://soundcloud.com/fishguymedia/sets"
+sports_url = "https://soundcloud.com/fishguymedia/sets/up-next-sports"
+comedy_url = "https://soundcloud.com/fishguymedia/sets/comics-of-the-round-table"
+fishbowl_url = "https://soundcloud.com/fishguymedia/sets/fish-bowl-podcast"
+32bit_url = "https://soundcloud.com/fishguymedia/sets/32-bit-arena-podcast"
+uptown_url = "https://soundcloud.com/fishguymedia/sets/uptown-series"
+
+
+
 class Scraper
   
-  
-  def self.get_playlists
-    #url = BASE_URL + 'keyword'
-    URL = "https://soundcloud.com/fishguymedia" + "/sets"
-end
-
-def self.get_categories
-  URL = "https://soundcloud.com/fishguymedia/sets" + playlist 
-end
