@@ -38,7 +38,13 @@ parsed_base = Nokogiri::HTML(base_html)
 
 #puts parsed_base.class
 
-base_episodes = parsed_base.css("soundTitle_titleContainer span")
+base_episodes = parsed_base.css("")
+#sports_episodes = parsed_sports.css("")
+#comedy_episodes = parsed_comedy.css("")
+#fishbowl_episodes = parsed_fishbowl.css("")
+#bit_episodes = parsed_bit.css("")
+#uptown_episodes = parsed_uptown.css("")
+
 
 #puts page.class #tempfile
 #puts page.content_type #text/html
