@@ -1,8 +1,27 @@
 
 
-class Playlists
- @@all = [ ]
- 
+class Episodes
+  attr_accessor :title, :url
+  
+  @@episodes = []
+  
+  def self.scrape_episodes
+    
+    #doc = nokogiri::html(open("website")
+    
+    #doc.css("").collect do |episode|
+       title = episode.css ("")
+       url = ("")
+       episode = self.new(title, url)
+  end 
+  
+  
+  def initialize(title, url)
+    @title, @url = title, url
+    @@episodes << self
+  end
+  
+  def self.all 
  
   def self.sports
     @sports = []
@@ -50,13 +69,6 @@ end
 
 
 
-class Episodes
+
+ 
   
-  attr_reader :title, :url
-  
-  def initialize(title, url)
-    @title, @url = title, url
-    @@all << self
-  end
-  
-end
