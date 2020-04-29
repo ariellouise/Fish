@@ -3,14 +3,26 @@
 class Playlists
  @@all = [ ]
  
-  def sports
+ def self.drink
+
+ 
+  def self.sports
+    @sports = []
+    @@episodes.each do |episode|
+      if playlist.type == "sports"
+        @sports << playlist
+      end
   end
   
-  def comedy
-    
+  def self.comedy
+    @comedy = []
+    @@episodes.each do |episode|
+      if playlist.type == "comedy"
+        @comedy << playlist
+      end
   end
   
-  def fishbowl
+  def self.fishbowl
     
   end
   
