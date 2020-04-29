@@ -10,24 +10,31 @@ base_url = "https://soundcloud.com/fishguymedia/sets"
 #uptown_url = "https://soundcloud.com/fishguymedia/sets/uptown-series"
 
 
-page = open(base_url)
-page_html = base_page.read
+base_page = open(base_url)
+base_html = base_page.read
 
 
-sports_page = open(sports_url)
-sports_html = sports_page.read
+#sports_page = open(sports_url)
+#sports_html = sports_page.read
 
-comedy_page = open(comedy_url)
-comedy_html = comedy_page.read
+#comedy_page = open(comedy_url)
+#comedy_html = comedy_page.read
 
-fishbowl_page = open(fishbowl_url)
-fishbowl_html = fishbowl_page.read
+#fishbowl_page = open(fishbowl_url)
+#fishbowl_html = fishbowl_page.read
 
-bit_page = open(bit_url)
-bit_html = bit_page.read
+#bit_page = open(bit_url)
+#bit_html = bit_page.read
 
-uptown_page = open(uptown_url)
-uptown_html = uptown_page.read
+#uptown_page = open(uptown_url)
+#uptown_html = uptown_page.read
+
+parsed_base = Nokogiri::HTML(base_html)
+#parsed_sports = Nokogiri::HTML(sports_html)
+#parsed_comedy = Nokogiri::HTML(comedy_html)
+#parsed_fishbowl = Nokogiri::HTML(fishbowl_html)
+#parsed_bit = Nokogiri::HTML(bit_html)
+#parsed_uptown = Nokogiri::HTML(uptown_html)
 
 puts page.class #tempfile
 puts page.content_type #text/html
