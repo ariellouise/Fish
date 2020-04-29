@@ -104,5 +104,19 @@ def menu
    else 
      puts "This is not a correct choice. Please try again."
      menu
- end
+   end
+   
+   if input != "exit" && @episode_input[input.to_i-1]
+     puts @episode_input[input.to_i-1].title
+      puts "To listen to this episode on SoundCloud please visit: #{@episode_input[input.to_i-1].url}"
+     menu
+   elseif input == "exit"
+     exit
+   else 
+     puts "That is not a correct choice. Please try again."
+     menu
+   end
+  end
+  
+  
   
