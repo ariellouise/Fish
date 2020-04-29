@@ -3,6 +3,7 @@
 class CLI 
   def start 
     puts "Welcome to The Fish Guy Media Podcast Episode List!"
+    menu
   end
 end
 
@@ -85,5 +86,23 @@ def menu
      puts "Please check your response and try again, as this in not a correct input type!"
      menu
    end 
+ end
+ 
+ def episode_choice(input_1, input)
+   if input_1 == "1"
+     @episode_input = @episodes_sports
+   elseif input_1 == "2"
+     @episode_input = @episodes_comedy
+   elseif input_1 == "3"
+     @episode_input = @episodes_fishbowl
+   elseif input_1 == "4"
+     @episode_input = @episodes_bit
+   elseif input_1 == "5"
+     @episode_input = @episodes_uptown
+   elseif input == "exit"
+     exit
+   else 
+     puts "This is not a correct choice. Please try again."
+     menu
  end
   
