@@ -79,4 +79,11 @@ def menu
      puts "Please choose an episode by number to get the website where you can listen to this episode."
       input = gets.strip
       episode_choice(input_1, input)
+   when "exit"
+     exit 
+   else
+     puts "Please check your response and try again, as this in not a correct input type!"
+     menu
+   end 
+ end
   
