@@ -23,16 +23,30 @@ class Playlists
   end
   
   def self.fishbowl
+    @fishbowl = []
+    @@episodes.each do |episode|
+      if playlist.type == "fishbowl"
+        @fishbowl << playlist
+      end
+  end
     
+  
+  def self.bit
+    @bit = []
+    @@episodes.each do |episode|
+      if playlist.type == "bit"
+        @bit << playlist
+      end
   end
   
-  def bit
-    
-  end
-  
-  def uptown
-    
-  end
+
+  def self.uptown
+    @uptown = []
+    @@episodes.each do |episode|
+      if playlist.type == "uptown"
+        @uptown << playlist
+      end
+  end 
 
 end 
 
