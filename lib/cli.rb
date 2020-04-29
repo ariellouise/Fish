@@ -35,3 +35,15 @@ def list_uptown
   @episodes
   @episodes_uptown
   
+  
+  
+  
+def menu
+  input_1 = ""
+  input = ""
+  puts "For a list of episodes of the show, *Up Next Sports Show!*, press '1'."
+  puts "For a list of episodes of the show, *Comics Of The Round Table*, press '2'."
+  puts "For a list of episodes of the show, *The Fishbowl Podcast*, press '3'."
+  puts "For a list of episodes of the show, *32 Bit Arena! Podcast*, press '4'."
+  puts "For a list of episodes of the show, *Uptown Series Podcast*, press '5'."
+  
