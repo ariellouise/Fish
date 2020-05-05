@@ -7,17 +7,8 @@ class CLI
   end
 
   def list_sports
-    @episodes
-    @@episodes_sports.each do |episode|
-      if episode.type == "sports"
-        @sports << episode
-      end
-    end
-  
-      @sports.each.with_index(1) do |sports, i|
-        puts "#{i}. #{sports.name}"
-      end
-    end
+    @episodes ||= Episodes.scrape_episodes
+    @@episodes_sports = Episodes.sports
 
 
   def list_comedy
