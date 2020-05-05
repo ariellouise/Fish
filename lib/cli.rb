@@ -8,7 +8,7 @@ class CLI
 
   def list_sports
     @episodes ||= Episodes.scrape_episodes
-    @@episodes_sports = Episodes.sports
+    @episodes_sports = Episodes.sports
 
 
   def list_comedy
