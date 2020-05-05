@@ -17,7 +17,7 @@ class CLI
       @sports.each.with_index(1) do |sports, i|
         puts "#{i}. #{sports.name}"
       end
-
+    end
 
 
   def list_comedy
@@ -31,6 +31,7 @@ class CLI
       @comedy.each.with_index(1) do |comedy, i|
         puts "#{i}. #{comedy.name}"
       end
+  end
   
   
   
@@ -46,6 +47,7 @@ class CLI
       @fishbowl.each_with_index(1) do |fishbowl, i|
         puts "#{i}. #{fishbowl.name}"
       end
+  end
   
   
   
@@ -60,7 +62,7 @@ class CLI
       @bit.each.with_index(1) do |bit, i|
         puts "#{i}. #{bit.name}"
       end
-  
+  end
   
   def list_uptown
     @episodes
@@ -73,6 +75,7 @@ class CLI
       @uptown.each.with_index(1) do |uptown, i|
         puts "#{i}. #{uptown.name}"
       end
+  end
   
   
   
