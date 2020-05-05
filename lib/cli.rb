@@ -8,13 +8,20 @@ class CLI
 
   def list_sports
     @episodes
-    @episodes_sports
+    @@episodes_sports.each do |episode|
+      if episode.type == "sports"
+        @sports << episode
+      end
+    end
+  
+      @sports.each.with_index(1) do |sports, i|
+        puts "#{i}. #{sports.name}"
 
 
 
   def list_comedy
     @episodes
-    @episodes_comedy
+    @episodes_comedy 
   
   
   
