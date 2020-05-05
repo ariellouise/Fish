@@ -9,65 +9,27 @@ class CLI
   def list_sports
     @episodes ||= Episodes.scrape_episodes
     @episodes_sports = Episodes.sports
-
-
+  end   
+  
   def list_comedy
-    @episodes
-    @@episodes_comedy.each do |episode|
-      if episode.type == "comedy"
-        @comedy << episode
-      end
-    end
-  
-      @comedy.each.with_index(1) do |comedy, i|
-        puts "#{i}. #{comedy.name}"
-      end
-  end
-  
-  
-  
-  
+    @episodes ||= Episodes.scrape_episodes
+    @episodes_comedy = Episodes.comedy
+  end 
+
   def list_fishbowl
-    @episodes 
-    @@episodes_fishbowl.each do |episode|
-      if episode.type == "fishbowl"
-        @fishbowl << episode
-      end
-    end
-  
-      @fishbowl.each_with_index(1) do |fishbowl, i|
-        puts "#{i}. #{fishbowl.name}"
-      end
-  end
-  
-  
-  
+    @episodes ||= Episodes.scrape_episodes
+    @episodes_fishbowl = Episodes.fishbowl
+  end 
+
   def list_bit
-    @episodes 
-    @@episodes_bit.each do |episode|
-      if episode.type == "bit"
-        @bit << episode
-      end
-    end
-  
-      @bit.each.with_index(1) do |bit, i|
-        puts "#{i}. #{bit.name}"
-      end
+    @episodes ||= Episodes.scrape_episodes
+    @episodes_bit = Episodes.bit
   end
-  
+
   def list_uptown
-    @episodes
-    @@episodes_uptown.each do |episode|
-      if episode.type == "uptown"
-        @uptown << episode
-      end
-    end
-  
-      @uptown.each.with_index(1) do |uptown, i|
-        puts "#{i}. #{uptown.name}"
-      end
+    @episodes ||= Episodes.scrape_episodes
+    @episodes_uptown = Episodes.uptown
   end
-  
   
   
   def menu
